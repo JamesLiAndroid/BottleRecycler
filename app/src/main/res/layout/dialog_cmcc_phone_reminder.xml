@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/reminderCmcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20.0px"
+                android:layout_marginLeft="40.0px"
+                android:layout_marginRight="40.0px"
+                android:layout_marginTop="20.0px"
+                android:text="@string/cmccRechargeContent"
+                android:textColor="#ffffffff"
+                android:textSize="25.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnKnown"
+                android:layout_width="156.0px"
+                android:layout_height="65.0px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25.0px"
+                android:background="@drawable/tongdaoweihu_gaoji_btn_bg"
+                android:text="@string/btn_known"
+                android:textColor="@color/button_textColor"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

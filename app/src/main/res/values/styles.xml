@@ -1,0 +1,67 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="myTheme" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="myAppTheme" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/default_animation</item>
+    </style>
+    <style name="default_animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/translate_righttoleft_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/translate_righttoleft_out</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="FullscreenTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="ButtonBar">
+        <item name="android:background">@android:drawable/bottom_bar</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+    </style>
+    <style name="ButtonBarButton" />
+    <style name="CustomProgressStyle" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:maxWidth">100.0dip</item>
+        <item name="android:maxHeight">100.0dip</item>
+        <item name="android:minWidth">100.0dip</item>
+        <item name="android:minHeight">100.0dip</item>
+    </style>
+    <style name="text_background">
+        <item name="android:background">@color/bg_color</item>
+    </style>
+    <style name="Custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/anjian_bg_off</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="blue_bg_shadow">
+        <item name="android:shadowColor">#ff0099cc</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+</resources>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff7ac0e1">
+
+    <TextView
+        android:id="@+id/textView_Optr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="52.0dip"
+        android:layout_y="37.0dip"
+        android:gravity="left"
+        android:text="@string/tester"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView_RvmCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="52.0dip"
+        android:layout_y="101.0dip"
+        android:gravity="left"
+        android:text="@string/terminal_no"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_Optr"
+        android:layout_width="437.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="208.0dip"
+        android:layout_y="37.0dip"
+        android:ems="10"
+        android:gravity="center|left"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/editText_RvmCode"
+        android:layout_width="215.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="208.0dip"
+        android:layout_y="101.0dip"
+        android:ems="10"
+        android:gravity="center|left"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/button_SetSettings"
+        android:layout_width="175.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="460.0dip"
+        android:layout_y="102.0dip"
+        android:text="@string/set_terminal_no" />
+
+    <Button
+        android:id="@+id/button_OpenDoor"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="26.0dip"
+        android:layout_y="169.0dip"
+        android:text="@string/Detection_to_open_door" />
+
+    <Button
+        android:id="@+id/button_CloseDoor"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="26.0dip"
+        android:layout_y="234.0dip"
+        android:text="@string/Detection_to_close_door" />
+
+    <Button
+        android:id="@+id/button_Forward"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="26.0dip"
+        android:layout_y="299.0dip"
+        android:text="@string/conveyor_forward" />
+
+    <Button
+        android:id="@+id/button_Backward"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="26.0dip"
+        android:layout_y="364.0dip"
+        android:text="@string/conveyor_back" />
+
+    <Button
+        android:id="@+id/button_OpenBottleDoor"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="26.0dip"
+        android:layout_y="429.0dip"
+        android:text="@string/dwonOpenDoorBtn" />
+
+    <Button
+        android:id="@+id/button_CheckFirstLight"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="26.0dip"
+        android:layout_y="494.0dip"
+        android:text="@string/first_photoelectric" />
+
+    <Button
+        android:id="@+id/button_CheckSecondLight"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="26.0dip"
+        android:layout_y="566.0dip"
+        android:text="@string/second_photoelectric" />
+
+    <Button
+        android:id="@+id/button_CheckThirdLight"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="26.0dip"
+        android:layout_y="637.0dip"
+        android:text="@string/third_photoelectric" />
+
+    <Button
+        android:id="@+id/button_CheckPrinter1"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="26.0dip"
+        android:layout_y="709.0dip"
+        android:text="@string/printer1_test" />
+
+    <Button
+        android:id="@+id/button_CheckPrinter2"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="26.0dip"
+        android:layout_y="775.0dip"
+        android:text="@string/printer2_test" />
+
+    <Button
+        android:id="@+id/button_ReadBarcode"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="351.0dip"
+        android:layout_y="169.0dip"
+        android:text="@string/read_barcode_test" />
+
+    <Button
+        android:id="@+id/button_DoorLightOn"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="351.0dip"
+        android:layout_y="234.0dip"
+        android:text="@string/turn_on_the_door_lamp" />
+
+    <Button
+        android:id="@+id/button_DoorLightFlash"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="351.0dip"
+        android:layout_y="299.0dip"
+        android:text="@string/door_lights_flashing" />
+
+    <Button
+        android:id="@+id/button_DoorLightOff"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="351.0dip"
+        android:layout_y="364.0dip"
+        android:text="@string/door_lamp_closed" />
+
+    <Button
+        android:id="@+id/button_BarcodeLightOn"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="351.0dip"
+        android:layout_y="429.0dip"
+        android:text="@string/camera_light_open" />
+
+    <Button
+        android:id="@+id/button_BarcodeLightOff"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="351.0dip"
+        android:layout_y="494.0dip"
+        android:text="@string/camera_light_closed" />
+
+    <Button
+        android:id="@+id/button_ReadTransferCard"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="351.0dip"
+        android:layout_y="559.0dip"
+        android:text="@string/ICcard_read_test" />
+
+    <Button
+        android:id="@+id/button_OpenCamera"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="351.0dip"
+        android:layout_y="624.0dip"
+        android:text="@string/camera_test" />
+
+    <SurfaceView
+        android:id="@+id/surfaceView_Camera"
+        android:layout_width="286.0dip"
+        android:layout_height="138.0dip"
+        android:layout_x="351.0dip"
+        android:layout_y="689.0dip" />
+
+    <Button
+        android:id="@+id/Button_AutoCheck"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="689.0dip"
+        android:layout_y="37.0dip"
+        android:text="@string/automatic_detection" />
+
+    <Button
+        android:id="@+id/button_RecycleBottleCheck"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="689.0dip"
+        android:layout_y="102.0dip"
+        android:text="@string/throw_bottles_of_test" />
+
+    <Button
+        android:id="@+id/button_GoBack"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="1000.0dip"
+        android:layout_y="37.0dip"
+        android:text="@string/backButton" />
+
+    <Button
+        android:id="@+id/button_WeighRead"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="1053.0dip"
+        android:layout_y="102.0dip"
+        android:text="@string/weigh_read"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView_DeviceListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="689.0dip"
+        android:layout_y="169.0dip"
+        android:text="@string/equipment_connected_listing"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView_DeviceList"
+        android:layout_width="600.0dip"
+        android:layout_height="260.0dip"
+        android:layout_x="689.0dip"
+        android:layout_y="221.0dip"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/TextView_CurrentResult"
+        android:layout_width="650.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="689.0dip"
+        android:layout_y="484.0dip"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView_ResultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="689.0dip"
+        android:layout_y="559.0dip"
+        android:text="@string/result"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_Result"
+        android:layout_width="600.0dip"
+        android:layout_height="390.0dip"
+        android:layout_x="689.0dip"
+        android:layout_y="598.0dip"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="center|left|top"
+        android:inputType="textMultiLine|textNoSuggestions" />
+
+    <TextView
+        android:id="@+id/textView_Hint"
+        android:layout_width="605.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="26.0dip"
+        android:layout_y="858.0dip"
+        android:gravity="left"
+        android:text=""
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button_CheckOk"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="26.0dip"
+        android:layout_y="936.0dip"
+        android:text="@string/pass" />
+
+    <Button
+        android:id="@+id/button_CheckNot"
+        android:layout_width="286.0dip"
+        android:layout_height="wrap_content"
+        android:layout_x="351.0dip"
+        android:layout_y="936.0dip"
+        android:text="@string/not_through" />
+</AbsoluteLayout>

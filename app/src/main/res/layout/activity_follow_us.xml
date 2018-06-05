@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="1188.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="3.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/follow_us_list_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75.0px"
+                    android:layout_marginTop="130.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/follow_us_list_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/follow_us_list_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="80.0px"
+            android:layout_marginRight="80.0px"
+            android:layout_weight="5.4"
+            android:background="@drawable/blue_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/follow_us_list"
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="12.0px"
+                android:layout_marginRight="10.0px"
+                android:layout_marginTop="5.0px"
+                android:layout_weight="1.5"
+                android:background="@drawable/lvniukou"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="75.0px"
+            android:layout_marginRight="85.0px"
+            android:layout_weight="1.8"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/follow_us_return_btn"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:background="@drawable/fanhui_btn"
+                android:paddingTop="75.0px"
+                android:text="@string/backBtn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/show_alarm_list_remind_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="132.0px"
+                    android:layout_marginTop="8.0px"
+                    android:background="@drawable/black_bg"
+                    android:gravity="center"
+                    android:padding="13.0px"
+                    android:text="@string/help_info"
+                    android:textSize="@dimen/remind_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginTop="5.0px"
+            android:layout_weight="0.8"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</LinearLayout>

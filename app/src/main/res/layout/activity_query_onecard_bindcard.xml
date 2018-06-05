@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="1188.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="3.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/query_onecard_bind_card_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32.0px"
+                    android:layout_marginTop="125.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/query_onecard_bind_card_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="125.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/query_onecard_input_number_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="100.0px"
+            android:layout_marginRight="100.0px"
+            android:layout_weight="5.4"
+            android:background="@drawable/blue_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="16.0px"
+                android:layout_marginLeft="13.0px"
+                android:layout_marginTop="7.0px"
+                android:layout_weight="3.0"
+                android:background="@drawable/bangding_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="158.0px"
+                    android:layout_height="158.0px"
+                    android:background="@drawable/yikatongbangdingshouji" />
+
+                <TextView
+                    style="@style/blue_bg_shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13.0px"
+                    android:text="@string/bind_phone"
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/onecard_textsize" />
+
+                <TextView
+                    android:id="@+id/isBind_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="13.0px"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_margin="7.0px"
+                android:layout_weight="5.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="379.0px"
+                    android:layout_height="84.0px"
+                    android:layout_marginTop="15.0px"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/query_onecard_bind_card_phonenum_edit"
+                        android:layout_width="379.0px"
+                        android:layout_height="84.0px"
+                        android:background="@drawable/shurukuang"
+                        android:imeOptions="flagNoExtractUi"
+                        android:maxLength="14"
+                        android:singleLine="true"
+                        android:textColor="#ff336666"
+                        android:textSize="30.0sp" />
+
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="84.0px"
+                        android:layout_marginLeft="240.0px"
+                        android:src="@drawable/sym_keyboard_delete"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="379.0px"
+                    android:layout_height="84.0px"
+                    android:layout_marginTop="5.0px">
+
+                    <Button
+                        android:id="@+id/one"
+                        android:layout_width="123.0px"
+                        android:layout_height="84.0px"
+                        android:background="@drawable/anjian_btn"
+                        android:text="1"
+                        android:textColor="@color/shouji_haoma_yanse"
+                        android:textSize="@dimen/phone_number_size" />
+
+                    <Button
+                        android:id="@+id/two"
+                        android:layout_width="123.0px"
+                        android:layout_height="84.0px"
+                        android:layout_marginLeft="5.0px"
+                        android:background="@drawable/anjian_btn"
+                        android:text="2"
+                        android:textColor="@color/shouji_haoma_yanse"
+                        android:textSize="@dimen/phone_number_size" />
+
+                    <Button
+                        android:id="@+id/three"
+                        android:layout_width="123.0px"
+                        android:layout_height="84.0px"
+                        android:layout_marginLeft="5.0px"
+                        android:background="@drawable/anjian_btn"
+                        android:text="3"
+                        android:textColor="@color/shouji_haoma_yanse"
+                        android:textSize="@dimen/phone_number_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="379.0px"
+                    android:layout_height="84.0px"
+                    android:layout_marginTop="5.0px">
+
+                    <Button
+                        android:id="@+id/four"
+                        android:layout_width="123.0px"
+                        android:layout_height="84.0px"
+                        android:background="@drawable/anjian_btn"
+                        android:text="4"
+                        android:textColor="@color/shouji_haoma_yanse"
+                        android:textSize="@dimen/phone_number_size" />
+
+                    <Button
+                        android:id="@+id/five"
+                        android:layout_width="123.0px"
+                        android:layout_height="84.0px"
+                        android:layout_marginLeft="5.0px"
+                        android:background="@drawable/anjian_btn"
+                        android:text="5"
+                        android:textColor="@color/shouji_haoma_yanse"
+                        android:textSize="@dimen/phone_number_size" />
+
+                    <Button
+                        android:id="@+id/six"
+                        android:layout_width="123.0px"
+                        android:layout_height="84.0px"
+                        android:layout_marginLeft="5.0px"
+                        android:background="@drawable/anjian_btn"
+                        android:text="6"
+                        android:textColor="@color/shouji_haoma_yanse"
+                        android:textSize="@dimen/phone_number_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="379.0px"
+                    android:layout_height="84.0px"
+                    android:layout_marginTop="5.0px">
+
+                    <Button
+                        android:id="@+id/seven"
+                        android:layout_width="123.0px"
+                        android:layout_height="84.0px"
+                        android:background="@drawable/anjian_btn"
+                        android:text="7"
+                        android:textColor="@color/shouji_haoma_yanse"
+                        android:textSize="@dimen/phone_number_size" />
+
+                    <Button
+                        android:id="@+id/eight"
+                        android:layout_width="123.0px"
+                        android:layout_height="84.0px"
+                        android:layout_marginLeft="5.0px"
+                        android:background="@drawable/anjian_btn"
+                        android:text="8"
+                        android:textColor="@color/shouji_haoma_yanse"
+                        android:textSize="@dimen/phone_number_size" />
+
+                    <Button
+                        android:id="@+id/nine"
+                        android:layout_width="123.0px"
+                        android:layout_height="84.0px"
+                        android:layout_marginLeft="5.0px"
+                        android:background="@drawable/anjian_btn"
+                        android:text="9"
+                        android:textColor="@color/shouji_haoma_yanse"
+                        android:textSize="@dimen/phone_number_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="379.0px"
+                    android:layout_height="84.0px"
+                    android:layout_marginTop="5.0px">
+
+                    <LinearLayout
+                        android:layout_width="123.0px"
+                        android:layout_height="84.0px"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/query_onecard_bind_card_clear"
+                            android:layout_width="123.0px"
+                            android:layout_height="84.0px"
+                            android:background="@drawable/anjian_btn"
+                            android:text="@string/clear_number"
+                            android:textColor="@color/shouji_haoma_yanse" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/zero"
+                        android:layout_width="123.0px"
+                        android:layout_height="84.0px"
+                        android:layout_marginLeft="5.0px"
+                        android:background="@drawable/anjian_btn"
+                        android:text="0"
+                        android:textColor="@color/shouji_haoma_yanse"
+                        android:textSize="@dimen/phone_number_size" />
+
+                    <LinearLayout
+                        android:layout_width="123.0px"
+                        android:layout_height="84.0px"
+                        android:layout_marginLeft="5.0px"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/query_onecard_bind_card_cancle"
+                            android:layout_width="123.0px"
+                            android:layout_height="84.0px"
+                            android:background="@drawable/anjian_btn"
+                            android:text="@string/backspace"
+                            android:textColor="@color/shouji_haoma_yanse" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/query_onecard_bind_card_return_btn"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:layout_marginLeft="100.0px"
+                android:background="@drawable/fanhui_btn_on"
+                android:paddingTop="50.0px"
+                android:text="@string/backBtn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="610.0px"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/query_onecard_bind_card_remind_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="132.0px"
+                    android:layout_marginTop="9.0px"
+                    android:background="@drawable/black_bg"
+                    android:gravity="center_vertical"
+                    android:padding="13.0px"
+                    android:text="@string/binding_Hint"
+                    android:textSize="@dimen/remind_text_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/query_onecard_bind_card_confirm"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:background="@drawable/bangding_btn"
+                android:paddingTop="50.0px"
+                android:text="@string/bind"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/query_onecard_bind_card_next"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:background="@drawable/xiacibangding_btn"
+                android:paddingTop="50.0px"
+                android:text="@string/bind_next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="0.8"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</AbsoluteLayout>

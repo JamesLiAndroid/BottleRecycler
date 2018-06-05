@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="1188.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="2.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/aboutus_us_second_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65.0px"
+                    android:layout_marginTop="130.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutus_us_second_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="100.0px"
+            android:layout_marginRight="100.0px"
+            android:layout_weight="3.5"
+            android:background="@drawable/blue_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="19.0px"
+                    android:layout_marginLeft="10.0px"
+                    android:layout_marginTop="7.0px"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/aboutus_us_second_content_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/aboutus_us_second_content_title"
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="375.0px"
+                        android:layout_height="130.0px"
+                        android:gravity="center"
+                        android:textColor="@color/blue_text"
+                        android:textSize="@dimen/onecard_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15.0px"
+                android:layout_marginRight="13.0px"
+                android:layout_marginTop="7.0px"
+                android:layout_weight="5.0"
+                android:background="#ff000000"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <WebView
+                    android:id="@+id/aboutus_webview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="93.0px"
+            android:layout_marginRight="107.0px"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/aboutus_us_second_return_btn"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:layout_marginLeft="10.0px"
+                android:background="@drawable/fanhui_btn"
+                android:paddingTop="65.0px"
+                android:text="@string/backBtn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="133.0px"
+                    android:layout_marginTop="7.0px"
+                    android:background="@drawable/black_bg"
+                    android:gravity="center"
+                    android:padding="13.0px"
+                    android:text="@string/help_info"
+                    android:textSize="@dimen/remind_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginTop="5.0px"
+            android:layout_weight="0.6"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="150.0px"
+                android:layout_height="50.0px"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

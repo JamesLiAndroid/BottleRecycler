@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+        <com.incomrecycle.prms.rvm.gui.activity.view.MyVideoView
+            android:id="@+id/screen_myVideoView"
+            is_scale="false"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <AbsoluteLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.incomrecycle.prms.rvm.gui.activity.view.MyGifView
+            android:id="@+id/screen_myGifView"
+            is_scale="true"
+            res_id="@drawable/pingzitu"
+            android:layout_width="200.0px"
+            android:layout_height="200.0px"
+            android:layout_marginLeft="1080.0px"
+            android:layout_marginTop="30.0px"
+            android:layout_x="1016.0px"
+            android:layout_y="60.0px" />
+    </AbsoluteLayout>
+</FrameLayout>

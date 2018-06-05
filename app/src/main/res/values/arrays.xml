@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alarm_status">
+        <item>@string/alarm_status_item_1</item>
+        <item>@string/alarm_status_item_2</item>
+        <item>@string/alarm_status_item_3</item>
+        <item>@string/alarm_status_item_4</item>
+    </string-array>
+    <string-array name="alarm_info">
+        <item>@string/alarm_info_item_1</item>
+        <item>@string/alarm_info_item_2</item>
+        <item>@string/alarm_info_item_3</item>
+        <item>@string/alarm_info_item_4</item>
+        <item>@string/alarm_info_item_5</item>
+        <item>@string/alarm_info_item_6</item>
+        <item>@string/alarm_info_item_7</item>
+        <item>@string/alarm_info_item_8</item>
+        <item>@string/alarm_info_item_9</item>
+        <item>@string/alarm_info_item_10</item>
+        <item>@string/alarm_info_item_11</item>
+        <item>@string/alarm_info_item_12</item>
+        <item>@string/alarm_info_item_13</item>
+        <item>@string/alarm_info_item_14</item>
+        <item>@string/alarm_info_item_15</item>
+        <item>@string/alarm_info_item_16</item>
+        <item>@string/alarm_info_item_17</item>
+    </string-array>
+</resources>

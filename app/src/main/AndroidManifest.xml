@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.incomrecycle.prms.rvm">
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.incomrecycle.prms.rvm.RVMApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity
+            android:name="com.incomrecycle.prms.rvm.RVMActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.RVMMainActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.RVMMainADActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.QRCodeActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.OneCardBindInfoActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.CommitRebateInfoFailActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.RechargeResultActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.OneCardRechargeWarnActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.RechargingActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.PhoneRechargeResultActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.QRCodeResultActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.BindCardActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.PhoneRebateActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.FirstRechargeWarnActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.SelectRecycleActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.SelectVoucherActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.channel.CaptureActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.ActivityPageActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.GreenCardActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.GreenCardResultActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.PrintingVoucherActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.ThankBottlePageActivity"/>
+        <uses-library android:name="android.test.runner"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.channel.ChannelActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.channel.ChannelMainActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.channel.ChannelAdvancedActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.PutPaperActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.ThankPaperPageActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.PutBottleYC103Activity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.PutBottleYC104Activity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.PutBottleYC103PActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.ValidateOneCardActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.ConvenienceServicesActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.QueryRechargeRecordActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.QueryConsumptionRecordActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.QueryOneCardActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.OneCardBindPhoneActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.OneCardBindPhoneInfoActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.OneCardRechargeHintActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.OneCardRechargeResultActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.OneCardRechargingActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.QueryQRCodeActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.QueryQRCodeResultActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.aboutus.AboutUsActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.aboutus.AboutUsSecondActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.channel.check.YC103Activity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.channel.check.YC104Activity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.channel.check.YC103POLDActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.channel.check.YC103PNEWActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.channel.check.YC104CActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.channel.AlarmListActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.EnvironmentalPromotionalActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.AnnouncementActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.FollowUsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.AdvertisementVideoActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.QRCodeTransferActivity"/>
+        <activity android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.QueryTransactionCard"/>
+        <receiver android:name="com.incomrecycle.prms.rvm.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.FaultListActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.WechatActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.Not_concern_wechat"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.WechatResultActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.ActivityAdActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.NewOneCardRechargeResultWarnActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.OneCardToLoadActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.OneCardToScrapeActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.NewCommitRebateInfoFailActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.WechatShowActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.NewFirstRechargeWarnActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.NewOneCardRechargeWarnActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.NewRechargeResultActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.NewRechargingActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.NewValidateOneCardActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.NewOneCardBindPhoneActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.QueryNewConsumptionRecordActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.QueryNewRechargeRecordActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.NewOneCardRechargingActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.NewOneCardRechargeResultActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.AlipayActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.AlipayResultActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.AlipayShowActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.ScreenActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.Concern_bdj"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.BdjActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.starput.BdjResultActivity">s
+        </activity>
+        <activity android:launchMode="singleInstance" android:name="com.incomrecycle.prms.rvm.gui.activity.convenienceservices.BDJRechagActivity"/>
+    </application>
+
+</manifest>

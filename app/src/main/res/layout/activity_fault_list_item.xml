@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/plc_comm_error_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/plc_comm_error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/hardware_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/plc_comm_error_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plc_door_error_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/plc_door_error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/hardware_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/plc_door_error_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/service_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/peizhi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/service_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/fault_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/max_bottle_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/max_bottle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/storage_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/max_bottle_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rebates_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/rebates_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/Rebates_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/rebates_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/second_light_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/light_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/fault_second_light_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fault_second_light_solve_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/fault_second_light_solve_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/fault_second_light_solve_remind" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/first_light"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/first_light_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/light_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/fault_first_light_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fault_first_light_solve_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/fault_first_light_solve_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/fault_first_light_solve_remind" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_light"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/third_light_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/light_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/fault_third_light_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/power_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/power_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/Power_off_before_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/fault_power_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nopaper_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/nopaper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/print_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/fault_nopaper_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/print_error_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/print_error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/print_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/fault_print_error_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/barcode_scaner_error_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/barcode_scaner_error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/Power_off_before_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/fault_barcode_scaner_error_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/play_sounds_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/play_sounds_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/Audio_driver_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/play_sounds_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/year_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/yearerror_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/system_time_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/fault_yearerror_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/update_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/updateerror_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5.0px"
+            android:paddingTop="5.0px"
+            android:text="@string/update_state"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/fault_updateerror_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stop_service_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="10.0px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/fault_stopservice_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="5.0px"
+            android:paddingLeft="10.0px"
+            android:paddingTop="5.0px"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+</LinearLayout>

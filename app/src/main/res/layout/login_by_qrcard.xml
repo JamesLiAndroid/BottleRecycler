@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="378.0px"
+                android:layout_height="88.0px"
+                android:layout_marginTop="20.0px"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/userNameEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="88.0px"
+                    android:background="@drawable/shurukuang"
+                    android:imeOptions="flagNoExtractUi"
+                    android:maxLength="14"
+                    android:singleLine="true"
+                    android:textColor="#ff336666"
+                    android:textSize="30.0sp" />
+
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="67.0px"
+                    android:layout_marginLeft="330.0px"
+                    android:layout_marginTop="10.0px"
+                    android:src="@drawable/sym_keyboard_delete" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="378.0px"
+                android:layout_height="88.0px"
+                android:layout_marginTop="10.0px">
+
+                <Button
+                    android:id="@+id/one"
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:background="@drawable/anjian_btn"
+                    android:text="1"
+                    android:textColor="@color/shouji_haoma_yanse"
+                    android:textSize="@dimen/phone_number_size" />
+
+                <Button
+                    android:id="@+id/two"
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:layout_marginLeft="1.0px"
+                    android:background="@drawable/anjian_btn"
+                    android:text="2"
+                    android:textColor="@color/shouji_haoma_yanse"
+                    android:textSize="@dimen/phone_number_size" />
+
+                <Button
+                    android:id="@+id/three"
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:layout_marginLeft="1.0px"
+                    android:background="@drawable/anjian_btn"
+                    android:text="3"
+                    android:textColor="@color/shouji_haoma_yanse"
+                    android:textSize="@dimen/phone_number_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="378.0px"
+                android:layout_height="88.0px">
+
+                <Button
+                    android:id="@+id/four"
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:background="@drawable/anjian_btn"
+                    android:text="4"
+                    android:textColor="@color/shouji_haoma_yanse"
+                    android:textSize="@dimen/phone_number_size" />
+
+                <Button
+                    android:id="@+id/five"
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:layout_marginLeft="1.0px"
+                    android:background="@drawable/anjian_btn"
+                    android:text="5"
+                    android:textColor="@color/shouji_haoma_yanse"
+                    android:textSize="@dimen/phone_number_size" />
+
+                <Button
+                    android:id="@+id/six"
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:layout_marginLeft="1.0px"
+                    android:background="@drawable/anjian_btn"
+                    android:text="6"
+                    android:textColor="@color/shouji_haoma_yanse"
+                    android:textSize="@dimen/phone_number_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="378.0px"
+                android:layout_height="88.0px">
+
+                <Button
+                    android:id="@+id/seven"
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:background="@drawable/anjian_btn"
+                    android:text="7"
+                    android:textColor="@color/shouji_haoma_yanse"
+                    android:textSize="@dimen/phone_number_size" />
+
+                <Button
+                    android:id="@+id/eight"
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:layout_marginLeft="1.0px"
+                    android:background="@drawable/anjian_btn"
+                    android:text="8"
+                    android:textColor="@color/shouji_haoma_yanse"
+                    android:textSize="@dimen/phone_number_size" />
+
+                <Button
+                    android:id="@+id/nine"
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:layout_marginLeft="1.0px"
+                    android:background="@drawable/anjian_btn"
+                    android:text="9"
+                    android:textColor="@color/shouji_haoma_yanse"
+                    android:textSize="@dimen/phone_number_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="378.0px"
+                android:layout_height="88.0px">
+
+                <LinearLayout
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/qrcode_clear"
+                        android:layout_width="125.0px"
+                        android:layout_height="85.0px"
+                        android:background="@drawable/anjian_btn"
+                        android:text="@string/clear_number"
+                        android:textColor="@color/shouji_haoma_yanse" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/zero"
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:layout_marginLeft="1.0px"
+                    android:background="@drawable/anjian_btn"
+                    android:text="0"
+                    android:textColor="@color/shouji_haoma_yanse"
+                    android:textSize="@dimen/phone_number_size" />
+
+                <LinearLayout
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:layout_marginLeft="1.0px"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/channelLoginButton"
+                        android:layout_width="125.0px"
+                        android:layout_height="85.0px"
+                        android:background="@drawable/anjian_btn"
+                        android:text="@string/recharged"
+                        android:textColor="@color/shouji_haoma_yanse" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</AbsoluteLayout>

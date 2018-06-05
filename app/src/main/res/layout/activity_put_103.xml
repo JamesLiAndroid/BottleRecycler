@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="1235.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="3.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/touping_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="63.0px"
+                    android:layout_marginTop="130.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/touping_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/touping_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="100.0px"
+            android:layout_marginRight="100.0px"
+            android:layout_weight="5.4"
+            android:background="@drawable/blue_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.incomrecycle.prms.rvm.gui.activity.view.MyGifView
+                    android:id="@+id/ImageView"
+                    android:layout_width="310.0px"
+                    android:layout_height="310.0px" />
+
+                <TextView
+                    android:id="@+id/put_bottle_full_text"
+                    style="@style/blue_bg_shadow"
+                    android:layout_width="310.0px"
+                    android:layout_height="310.0px"
+                    android:gravity="center"
+                    android:text="@string/stopService"
+                    android:textColor="@color/red"
+                    android:textSize="36.0sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="11.0px"
+                android:layout_marginRight="10.0px"
+                android:layout_marginTop="6.0px"
+                android:layout_weight="5.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/take_photo_layout"
+                    android:layout_width="1.0px"
+                    android:layout_height="1.0px"
+                    android:orientation="horizontal" />
+
+                <com.incomrecycle.prms.rvm.gui.activity.view.MyGifView
+                    android:id="@+id/rightImageView"
+                    is_scale="true"
+                    android:layout_width="652.0px"
+                    android:layout_height="408.0px"
+                    android:layout_marginTop="8.0px"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/touping_text"
+                    style="@style/blue_bg_shadow"
+                    android:layout_width="650.0px"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/hint"
+                    android:textColor="@color/blue_text"
+                    android:textSize="25.0sp" />
+
+                <TextView
+                    android:id="@+id/right_touping_text"
+                    style="@style/blue_bg_shadow"
+                    android:layout_width="650.0px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0px"
+                    android:gravity="left"
+                    android:lineSpacingExtra="10.0px"
+                    android:textColor="@color/blue_text"
+                    android:textSize="25.0sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="1.8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="913.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="110.0px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/touping_remind_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="135.0px"
+                    android:layout_marginTop="5.0px"
+                    android:background="@drawable/black_bg"
+                    android:gravity="center"
+                    android:padding="10.0px"
+                    android:singleLine="true"
+                    android:text="@string/puthint"
+                    android:textSize="@dimen/remind_text_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/touping_end_btn"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:background="@drawable/jieshu_btn"
+                android:paddingTop="72.0px"
+                android:text="@string/end"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="0.8"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</AbsoluteLayout>

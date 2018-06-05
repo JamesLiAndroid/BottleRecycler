@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="1188.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="3.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/query_onecard_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0px"
+                    android:layout_marginTop="100.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/query_onecard_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/query_onecard_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="80.0px"
+            android:layout_marginRight="80.0px"
+            android:layout_weight="5.4"
+            android:background="@drawable/blue_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.incomrecycle.prms.rvm.gui.activity.view.MyGifView
+                    android:id="@+id/query_onecard_imageview"
+                    android:layout_width="320.0px"
+                    android:layout_height="320.0px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="14.0px"
+                android:layout_marginRight="13.0px"
+                android:layout_marginTop="4.0px"
+                android:layout_weight="5.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/query_onecard_text"
+                    style="@style/blue_bg_shadow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="13.0px"
+                    android:text="@string/validatecardtext"
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/onecard_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/query_onecard_return_btn"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:layout_marginLeft="80.0px"
+                android:background="@drawable/fanhui_btn"
+                android:paddingTop="65.0px"
+                android:text="@string/backBtn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="955.0px"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/query_onecard_remind_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="132.0px"
+                    android:layout_marginTop="9.0px"
+                    android:background="@drawable/black_bg"
+                    android:gravity="center"
+                    android:padding="10.0px"
+                    android:text="@string/help_info"
+                    android:textSize="@dimen/remind_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="0.8"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</AbsoluteLayout>

@@ -1,0 +1,2 @@
+RVM_UPDATED_BEFORE=`busybox grep '"MES_TYPE":"RVM_VERSION"' /sdcard/rvmdaemon/logs/rvmdaemonlog.txt.$dd$ 2>/dev/null | busybox grep '$yyyy-MM-dd$' | busybox grep -v '"DOWNLOAD_URL":"http' | busybox wc -l`
+echo 'UPDATED_CHECK_COUNT:['$RVM_UPDATED_BEFORE']'

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="950.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="3.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/phone_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0px"
+                    android:layout_marginTop="100.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/phone_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/input_phone_number_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="80.0px"
+            android:layout_marginRight="80.0px"
+            android:layout_weight="5.4"
+            android:background="@drawable/blue_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="13.0px"
+                android:layout_marginLeft="10.0px"
+                android:layout_marginTop="5.0px"
+                android:layout_weight="3.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="109.0dip"
+                    android:layout_height="100.0px"
+                    android:layout_marginTop="80.0px"
+                    android:layout_weight="0.14"
+                    android:background="@drawable/torch_on" />
+
+                <TextView
+                    style="@style/blue_bg_shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0px"
+                    android:layout_marginRight="10.0px"
+                    android:layout_marginTop="10.0px"
+                    android:text="@string/recharge_success"
+                    android:textColor="@color/blue_text"
+                    android:textSize="55.0sp" />
+
+                <LinearLayout
+                    android:id="@+id/incom_balance_info"
+                    android:layout_width="730.0px"
+                    android:layout_height="0.0px"
+                    android:layout_weight="1.0"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="250.0px"
+                        android:layout_height="@dimen/linear_right_button_height"
+                        android:layout_marginBottom="50.0px"
+                        android:gravity="center|right"
+                        android:text="@string/rechargeAmount"
+                        android:textColor="@color/white"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/onecard_balance"
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="150.0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50.0px"
+                        android:layout_marginLeft="10.0px"
+                        android:gravity="center|left"
+                        android:textColor="@color/white"
+                        android:textSize="35.0sp" />
+
+                    <TextView
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="200.0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50.0px"
+                        android:layout_marginLeft="10.0px"
+                        android:text="@string/yuan"
+                        android:textColor="@color/white"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="1.8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="970.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="80.0px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/phone_remind_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="130.0px"
+                    android:layout_marginTop="5.0px"
+                    android:background="@drawable/black_bg"
+                    android:gravity="center"
+                    android:padding="10.0px"
+                    android:text="@string/help_info"
+                    android:textSize="@dimen/remind_text_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/onecard_cancle"
+                android:layout_width="145.0px"
+                android:layout_height="145.0px"
+                android:background="@drawable/queding_btn"
+                android:paddingTop="50.0px"
+                android:text="@string/cancle"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="0.8"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</AbsoluteLayout>

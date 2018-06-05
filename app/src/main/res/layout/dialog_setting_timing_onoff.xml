@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="900.0px"
+        android:layout_height="390.0px"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/setStartTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bootTime"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/start_put_textsize"
+                    android:textStyle="bold" />
+
+                <TimePicker
+                    android:id="@+id/setStartTimeTP1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40.0px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/setShutDownTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shutDownTime"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/start_put_textsize"
+                    android:textStyle="bold" />
+
+                <TimePicker
+                    android:id="@+id/setShutDownTimeTP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0px"
+            android:layout_marginRight="20.0px"
+            android:layout_marginTop="30.0px"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bn_setPowerOnAndPowerOffTime"
+                style="@style/blue_bg_shadow"
+                android:layout_width="0.0px"
+                android:layout_height="100.0px"
+                android:layout_weight="1.0"
+                android:background="@drawable/tongdaoweihu_gaoji_btn_bg"
+                android:gravity="center"
+                android:text="@string/onTiming"
+                android:textColor="@color/button_textColor"
+                android:textSize="@dimen/linear_right_button_textSize" />
+
+            <Button
+                android:id="@+id/bn_suspended"
+                style="@style/blue_bg_shadow"
+                android:layout_width="0.0px"
+                android:layout_height="100.0px"
+                android:layout_marginLeft="10.0px"
+                android:layout_weight="1.0"
+                android:background="@drawable/tongdaoweihu_gaoji_btn_bg"
+                android:gravity="center"
+                android:text="@string/cancelTiming"
+                android:textColor="@color/button_textColor"
+                android:textSize="@dimen/linear_right_button_textSize" />
+
+            <Button
+                android:id="@+id/bn_temp"
+                style="@style/blue_bg_shadow"
+                android:layout_width="0.0px"
+                android:layout_height="100.0px"
+                android:layout_marginLeft="10.0px"
+                android:layout_weight="1.0"
+                android:background="@drawable/tongdaoweihu_gaoji_btn_bg"
+                android:gravity="center"
+                android:text="@string/cancelTimingTemp"
+                android:textColor="@color/button_textColor"
+                android:textSize="@dimen/linear_right_button_textSize" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

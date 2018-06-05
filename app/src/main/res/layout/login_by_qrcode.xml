@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <SurfaceView
+                android:id="@+id/preview_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center" />
+
+            <com.incomrecycle.prms.rvm.gui.camera.ViewfinderView
+                android:id="@+id/viewfinder_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_camera_diy_circle"
+                android:layout_width="455.0px"
+                android:layout_height="455.0px"
+                android:layout_marginLeft="135.0px"
+                android:layout_marginTop="4.0px"
+                android:background="@drawable/bar_code_center" />
+
+            <ImageView
+                android:id="@+id/iv_camera_diy"
+                android:layout_width="442.0px"
+                android:layout_height="442.0px"
+                android:layout_marginLeft="140.0px"
+                android:layout_marginTop="10.0px"
+                android:background="@drawable/bar_code_round_grey"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/pg_camera_diy"
+                style="@style/CustomProgressStyle"
+                android:layout_width="435.0px"
+                android:layout_height="435.0px"
+                android:layout_marginLeft="145.0px"
+                android:layout_marginTop="15.0px"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/progressbar" />
+
+            <ImageView
+                android:id="@+id/iv_camera_diy_corner"
+                android:layout_width="468.0px"
+                android:layout_height="468.0px"
+                android:layout_marginLeft="130.0px"
+                android:background="@drawable/bar_code_four_corner" />
+        </FrameLayout>
+    </LinearLayout>
+</AbsoluteLayout>

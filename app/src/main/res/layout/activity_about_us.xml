@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="1188.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="2.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/aboutusTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0px"
+                    android:layout_marginTop="100.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/selectRecycleTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/showRabatesList"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="100.0px"
+            android:layout_marginRight="100.0px"
+            android:layout_weight="3.0"
+            android:background="@drawable/erjiyemian_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="182.0dip"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="65.0px"
+                    android:layout_height="65.0px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/xuanxiang" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="13.0px"
+                    android:text="@string/select_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/onecard_textsize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aboutus_trends_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20.0px"
+                android:orientation="horizontal"
+                android:paddingLeft="8.0px"
+                android:paddingRight="5.0px">
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="14.0px"
+                    android:layout_marginRight="2.5px"
+                    android:layout_weight="1.0" />
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="14.0px"
+                    android:layout_marginRight="2.5px"
+                    android:layout_weight="1.0" />
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="14.0px"
+                    android:layout_marginRight="2.5px"
+                    android:layout_weight="1.0" />
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="14.0px"
+                    android:layout_marginRight="2.5px"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="95.0px"
+            android:layout_marginRight="100.0px"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/aboutus_return_btn"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:background="@drawable/fanhui_btn"
+                android:paddingTop="65.0px"
+                android:text="@string/backBtn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/conve_remind_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="132.0px"
+                    android:layout_marginTop="7.0px"
+                    android:background="@drawable/black_bg"
+                    android:gravity="center"
+                    android:padding="13.0px"
+                    android:text="@string/help_info"
+                    android:textSize="@dimen/remind_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="80.0px"
+            android:layout_marginRight="100.0px"
+            android:layout_weight="0.5"
+            android:gravity="center|right"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</AbsoluteLayout>

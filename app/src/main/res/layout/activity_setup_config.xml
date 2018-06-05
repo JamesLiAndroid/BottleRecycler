@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setupcfglayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/blue_bg_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0px"
+        android:text="@string/setupCfgTopText"
+        android:textColor="@color/white"
+        android:textSize="@dimen/linear_left_top_textsize"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="2.0"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3.0"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0px"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0px"
+                            android:gravity="center"
+                            android:text="@string/reelectMode"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/linear_right_button_textSize" />
+
+                        <TextView
+                            android:id="@+id/localModeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="@dimen/linear_right_button_textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0px"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0px"
+                            android:gravity="center"
+                            android:text="@string/localHDVersion"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/linear_right_button_textSize" />
+
+                        <TextView
+                            android:id="@+id/localHDVersionText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="@dimen/linear_right_button_textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0px"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0px"
+                            android:gravity="center"
+                            android:text="@string/setupCfgLocalIpText"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/linear_right_button_textSize" />
+
+                        <TextView
+                            android:id="@+id/setupCfgLocalIpText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/linear_right_button_textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0px"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0px"
+                            android:gravity="center"
+                            android:text="@string/setupCfgAreaCode"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/linear_right_button_textSize" />
+
+                        <TextView
+                            android:id="@+id/setupCfgOperatorCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/linear_right_button_textSize" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/serviceCb"
+                    style="@style/blue_bg_shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0px"
+                    android:text="@string/setupCfgRecycleMethod"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/set_parameter_size" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="2.0">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0px"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbDonation"
+                            android:layout_width="0.0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:text="@string/donate"
+                            android:textSize="@dimen/linear_right_button_textSize"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/cbCoupon"
+                            android:layout_width="0.0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:text="@string/voucher"
+                            android:textSize="@dimen/linear_right_button_textSize"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0px"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbBDJ"
+                            android:layout_width="0.0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:text="@string/help_home_lv"
+                            android:textSize="@dimen/linear_right_button_textSize"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/cbD2Code"
+                            android:layout_width="0.0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:text="@string/QRcode"
+                            android:textSize="@dimen/linear_right_button_textSize"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0px"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbWechat"
+                            android:layout_width="0.0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:text="@string/wechat"
+                            android:textSize="@dimen/linear_right_button_textSize"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/cbMobilePhone"
+                            android:layout_width="0.0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:text="@string/phone"
+                            android:textSize="@dimen/linear_right_button_textSize"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0px"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbTrafficCard"
+                            android:layout_width="0.0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:text="@string/trafficcard"
+                            android:textSize="@dimen/linear_right_button_textSize"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/cbGreenCard"
+                            android:layout_width="0.0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:text="@string/greengard"
+                            android:textSize="@dimen/linear_right_button_textSize"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0px"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbAlipay"
+                            android:layout_width="0.0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:text="@string/Alipay"
+                            android:textSize="@dimen/linear_right_button_textSize"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_marginLeft="10.0px"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/setupCfgTimerNumText"
+                    android:textSize="@dimen/linear_right_button_textSize" />
+
+                <EditText
+                    android:id="@+id/setupCfgTimerNumEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textAutoComplete"
+                    android:textSize="@dimen/linear_right_button_textSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.0px"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/inputPhone"
+                        android:layout_width="0.0px"
+                        android:layout_height="35.0dip"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10.0px"
+                        android:layout_weight="1.0"
+                        android:background="@color/wechat_new_white"
+                        android:text="@string/inputPhone"
+                        android:textSize="@dimen/linear_right_button_textSize" />
+
+                    <Button
+                        android:id="@+id/inputWifi"
+                        android:layout_width="0.0px"
+                        android:layout_height="35.0dip"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="3.0px"
+                        android:layout_marginRight="3.0px"
+                        android:layout_weight="1.0"
+                        android:background="@color/wechat_new_white"
+                        android:text="@string/wifi"
+                        android:textSize="@dimen/linear_right_button_textSize" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/importPhoneNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="10.0px"
+                    android:layout_marginTop="5.0px"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textSize="25.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_marginLeft="10.0px"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/setupCfgRccIpText"
+                    android:textSize="@dimen/linear_right_button_textSize" />
+
+                <EditText
+                    android:id="@+id/setupCfgRccIpEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textAutoComplete"
+                    android:textSize="@dimen/linear_right_button_textSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_marginLeft="10.0px"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/port"
+                    android:textSize="@dimen/linear_right_button_textSize" />
+
+                <EditText
+                    android:id="@+id/setupCfgRccPortEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textAutoComplete"
+                    android:textSize="@dimen/linear_right_button_textSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_marginLeft="10.0px"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/setupCfgLinkBtn"
+                    android:layout_width="0.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10.0px"
+                    android:layout_marginRight="10.0px"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tongdaoweihu_btn_bg"
+                    android:text="@string/setupCfgLinkBtn"
+                    android:textColor="@color/button_textColor" />
+
+                <Button
+                    android:id="@+id/setupCfgDoneBtn"
+                    android:layout_width="0.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10.0px"
+                    android:layout_weight="1.0"
+                    android:background="#ff202924"
+                    android:text="@string/setupCfgDoneBtn"
+                    android:textColor="@color/button_textColor" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

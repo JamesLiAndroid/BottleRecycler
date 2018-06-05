@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="1235.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="3.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/thank_page_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="63.0px"
+                    android:layout_marginTop="130.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/thank_page_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thank_page_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="80.0px"
+            android:layout_marginRight="80.0px"
+            android:layout_weight="5.4"
+            android:background="@drawable/green_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_environment_erweima"
+                    android:layout_width="150.0px"
+                    android:layout_height="150.0px"
+                    android:background="@drawable/wechatqrcard_lv" />
+
+                <TextView
+                    android:id="@+id/tv_environ_show"
+                    style="@style/blue_bg_shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0px"
+                    android:gravity="center"
+                    android:text="@string/EnvironmentalPromotionalActivity_more_lv"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/onecard_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="468.0px"
+                android:layout_margin="5.0px"
+                android:layout_weight="5.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="2.0"
+                    android:padding="10.0px">
+
+                    <TextView
+                        android:id="@+id/all_bottles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/set_parameter_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="953.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="90.0px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/thank_page_remind_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="133.0px"
+                    android:layout_marginTop="8.0px"
+                    android:background="@drawable/black_bg"
+                    android:gravity="center"
+                    android:padding="10.0px"
+                    android:text="@string/thank"
+                    android:textSize="@dimen/remind_text_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/thank_page_end"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:background="@drawable/jieshu_btn"
+                android:paddingTop="72.0px"
+                android:text="@string/end"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="0.8"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</AbsoluteLayout>

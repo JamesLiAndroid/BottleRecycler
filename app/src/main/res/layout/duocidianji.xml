@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="900.0px"
+        android:layout_height="900.0px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15.0px"
+            android:gravity="center_horizontal"
+            android:text="@string/shijianxianhou"
+            android:textColor="@color/white"
+            android:textSize="30.0px" />
+
+        <LinearLayout
+            android:id="@+id/time1_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/startTime"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/start_put_textsize"
+                    android:textStyle="bold" />
+
+                <TimePicker
+                    android:id="@+id/time1_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40.0px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/endTime"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/start_put_textsize"
+                    android:textStyle="bold" />
+
+                <TimePicker
+                    android:id="@+id/time1_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/add1"
+                    android:layout_width="100.0px"
+                    android:layout_height="100.0px"
+                    android:layout_marginLeft="50.0px"
+                    android:background="@drawable/voice_up_selector"
+                    android:padding="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/time2_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0px"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/startTime"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/start_put_textsize"
+                    android:textStyle="bold" />
+
+                <TimePicker
+                    android:id="@+id/time2_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40.0px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/endTime"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/start_put_textsize"
+                    android:textStyle="bold" />
+
+                <TimePicker
+                    android:id="@+id/time2_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/delete2"
+                    android:layout_width="100.0px"
+                    android:layout_height="20.0px"
+                    android:layout_marginLeft="50.0px"
+                    android:background="@drawable/voice_down_selector"
+                    android:padding="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/time3_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0px"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/startTime"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/start_put_textsize"
+                    android:textStyle="bold" />
+
+                <TimePicker
+                    android:id="@+id/time3_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40.0px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/endTime"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/start_put_textsize"
+                    android:textStyle="bold" />
+
+                <TimePicker
+                    android:id="@+id/time3_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/delete3"
+                    android:layout_width="100.0px"
+                    android:layout_height="20.0px"
+                    android:layout_marginLeft="50.0px"
+                    android:background="@drawable/voice_down_selector"
+                    android:padding="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0px"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="100.0px"
+                android:background="@drawable/tongdaoweihu_gaoji_btn_bg"
+                android:text="@string/confirm"
+                android:textColor="@color/button_textColor"
+                android:textSize="@dimen/linear_right_button_textSize" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

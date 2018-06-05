@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="950.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="3.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bdj_GGK_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0px"
+                    android:layout_marginTop="100.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bdj_GGK_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="80.0px"
+            android:layout_marginRight="80.0px"
+            android:layout_weight="5.4"
+            android:background="@drawable/blue_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="13.0px"
+                android:layout_marginLeft="10.0px"
+                android:layout_marginTop="5.0px"
+                android:layout_weight="1.45"
+                android:background="@drawable/bangding_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60.0px"
+                    android:layout_height="60.0px"
+                    android:layout_marginTop="150.0px"
+                    android:background="@drawable/yikatong" />
+
+                <TextView
+                    android:id="@+id/bdj_rechange_text"
+                    style="@style/blue_bg_shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0px"
+                    android:layout_marginRight="10.0px"
+                    android:layout_marginTop="20.0px"
+                    android:text="@string/incomrc"
+                    android:textColor="@color/wechat_new_white"
+                    android:textSize="30.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bdj_GGK_layout"
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="500.0px"
+                    android:layout_height="100.0px"
+                    android:layout_marginLeft="110.0px"
+                    android:layout_marginTop="50.0px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="@string/card_in_total"
+                        android:textColor="@color/wechat_new_white"
+                        android:textSize="24.0sp" />
+
+                    <TextView
+                        android:id="@+id/cardmoney"
+                        android:layout_width="100.0px"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:textColor="@color/wechat_new_white"
+                        android:textSize="24.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5.0px"
+                        android:gravity="center"
+                        android:text="@string/yuan"
+                        android:textColor="@color/wechat_new_white"
+                        android:textSize="24.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ggk_info_show_layout"
+                    android:layout_width="500.0px"
+                    android:layout_height="100.0px"
+                    android:layout_marginLeft="110.0px"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="@string/wait_recharge"
+                        android:textColor="@color/wechat_new_white"
+                        android:textSize="24.0sp" />
+
+                    <TextView
+                        android:id="@+id/wait_recharge"
+                        android:layout_width="80.0px"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:textColor="@color/wechat_new_white"
+                        android:textSize="24.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5.0px"
+                        android:gravity="center"
+                        android:text="@string/yuan"
+                        android:textColor="@color/wechat_new_white"
+                        android:textSize="24.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5.0px"
+                        android:gravity="center"
+                        android:text="@string/all"
+                        android:textColor="@color/wechat_new_white"
+                        android:textSize="24.0sp" />
+
+                    <TextView
+                        android:id="@+id/bi"
+                        android:layout_width="80.0px"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:textColor="@color/wechat_new_white"
+                        android:textSize="24.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5.0px"
+                        android:gravity="center"
+                        android:text="@string/bi"
+                        android:textColor="@color/wechat_new_white"
+                        android:textSize="24.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/no_ggk_info_layout"
+                    android:layout_width="500.0px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110.0px"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/no_ggk_info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_wait_recharge"
+                        android:textColor="@color/wechat_new_white"
+                        android:textSize="24.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bdj_ggk_recharge_layout"
+                    android:layout_width="500.0px"
+                    android:layout_height="100.0px"
+                    android:layout_marginLeft="80.0px"
+                    android:layout_marginTop="20.0px"
+                    android:background="@color/qwhite"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="220.0px"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="20.0px"
+                            android:gravity="center"
+                            android:text="@string/this_recharge"
+                            android:textColor="@color/wechat_new_white"
+                            android:textSize="24.0sp" />
+
+                        <TextView
+                            android:id="@+id/recharge_now"
+                            android:layout_width="60.0px"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:textColor="@color/wechat_new_white"
+                            android:textSize="24.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10.0px"
+                            android:gravity="center"
+                            android:text="@string/yuan"
+                            android:textColor="@color/wechat_new_white"
+                            android:textSize="24.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="160.0px"
+                        android:layout_height="fill_parent"
+                        android:gravity="center">
+
+                        <ProgressBar
+                            android:id="@+id/pb_progressbar"
+                            style="@android:style/Widget.ProgressBar.Large.Inverse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/recharge_ing"
+                        android:layout_width="90.0px"
+                        android:layout_height="90.0px"
+                        android:layout_marginLeft="5.0px"
+                        android:layout_marginTop="5.0px"
+                        android:background="@drawable/this_recharge_btn"
+                        android:text="@string/recharge"
+                        android:textSize="24.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bdj_GGK_return_btn"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:layout_marginLeft="80.0px"
+                android:background="@drawable/fanhui_btn"
+                android:paddingTop="50.0px"
+                android:text="@string/backBtn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="810.0px"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bdj_GGK_remind_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="134.0px"
+                    android:layout_marginTop="12.0px"
+                    android:background="@drawable/black_bg"
+                    android:gravity="center_vertical"
+                    android:padding="10.0px"
+                    android:textSize="@dimen/remind_text_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bdj_GGK_end_btn"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:background="@drawable/jieshu_btn"
+                android:paddingTop="50.0px"
+                android:text="@string/end"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</LinearLayout>

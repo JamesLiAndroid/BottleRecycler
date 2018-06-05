@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="1235.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="3.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/login_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65.0px"
+                    android:layout_marginTop="130.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/login_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="100.0px"
+            android:layout_marginRight="100.0px"
+            android:layout_weight="5.4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="16.0px"
+                android:layout_marginTop="7.0px"
+                android:layout_weight="2.0"
+                android:background="@drawable/h_bg"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="18.0px"
+                    android:layout_marginLeft="10.0px"
+                    android:layout_marginTop="7.0px"
+                    android:layout_weight="1.05"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/qrcode_login_button"
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="180.0px"
+                        android:layout_height="180.0px"
+                        android:background="@drawable/erweimadenglu_icon_on"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="115.0px"
+                        android:text="@string/dboCodeButton"
+                        android:textColor="@color/white"
+                        android:textSize="20.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="20.0px"
+                    android:layout_marginTop="7.0px"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/pwd_login_button"
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="180.0px"
+                        android:layout_height="180.0px"
+                        android:background="@drawable/yonghumingdenglu_icon_off"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="115.0px"
+                        android:text="@string/channelLoginBtn"
+                        android:textColor="@color/white"
+                        android:textSize="20.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login_type_layout"
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="18.0px"
+                android:layout_marginTop="7.0px"
+                android:layout_weight="3.0"
+                android:background="@drawable/tongdaoweihu_blue_bg"
+                android:gravity="center"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="90.0px"
+            android:layout_marginRight="100.0px"
+            android:layout_weight="1.8"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/login_return_btn"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:background="@drawable/fanhui_btn"
+                android:paddingTop="65.0px"
+                android:text="@string/backBtn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/login_remind_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="130.0px"
+                    android:layout_marginTop="8.0px"
+                    android:background="@drawable/black_bg"
+                    android:padding="10.0px"
+                    android:textSize="@dimen/remind_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="0.8"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/network_sts"
+                android:layout_width="80.0px"
+                android:layout_height="75.0px"
+                android:layout_marginRight="18.0px"
+                android:background="@drawable/network_success" />
+        </LinearLayout>
+    </LinearLayout>
+</AbsoluteLayout>

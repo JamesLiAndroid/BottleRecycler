@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:padding="8.0px">
+
+                <TextView
+                    android:id="@+id/tv_erweima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/duwang_erweima_dialog"
+                    android:textColor="#ff827a78"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:id="@+id/alarm_iv_erweima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/tv_erweima"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8.0px"
+            android:layout_marginTop="8.0px"
+            android:background="#ff000000" />
+
+        <LinearLayout
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:padding="8.0px">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/duanwang_tishi"
+                    android:textColor="#ff827a78"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv"
+                    android:gravity="center_horizontal"
+                    android:text="@string/duanwang_chenshu"
+                    android:textColor="#ff827a78"
+                    android:textSize="18.0sp" />
+
+                <Button
+                    android:id="@+id/negativeButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20.0px"
+                    android:gravity="center"
+                    android:text="@string/cancle" />
+
+                <Button
+                    android:id="@+id/positiveButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/negativeButton"
+                    android:layout_marginBottom="20.0dip"
+                    android:gravity="center"
+                    android:text="@string/sure" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

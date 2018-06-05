@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="378.0px"
+            android:layout_height="88.0px"
+            android:layout_marginTop="10.0px"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/wechat_phone_phonenum_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="88.0px"
+                android:background="@drawable/shurukuang"
+                android:imeOptions="flagNoExtractUi"
+                android:maxLength="14"
+                android:singleLine="true"
+                android:textColor="#ff336666"
+                android:textSize="30.0sp" />
+
+            <ImageView
+                android:id="@+id/wechat_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="88.0px"
+                android:layout_marginLeft="290.0px"
+                android:src="@drawable/sym_keyboard_delete"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="385.0px"
+            android:layout_height="85.0px"
+            android:layout_marginTop="10.0px"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/wechat_one"
+                android:layout_width="125.0px"
+                android:layout_height="85.0px"
+                android:background="@drawable/anjian_btn"
+                android:text="1"
+                android:textColor="@color/shouji_haoma_yanse"
+                android:textSize="@dimen/phone_number_size" />
+
+            <Button
+                android:id="@+id/wechat_two"
+                android:layout_width="125.0px"
+                android:layout_height="85.0px"
+                android:layout_marginLeft="1.0px"
+                android:background="@drawable/anjian_btn"
+                android:text="2"
+                android:textColor="@color/shouji_haoma_yanse"
+                android:textSize="@dimen/phone_number_size" />
+
+            <Button
+                android:id="@+id/wechat_three"
+                android:layout_width="125.0px"
+                android:layout_height="85.0px"
+                android:layout_marginLeft="1.0px"
+                android:background="@drawable/anjian_btn"
+                android:text="3"
+                android:textColor="@color/shouji_haoma_yanse"
+                android:textSize="@dimen/phone_number_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="385.0px"
+            android:layout_height="85.0px"
+            android:layout_marginTop="2.0px"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/wechat_four"
+                android:layout_width="125.0px"
+                android:layout_height="85.0px"
+                android:background="@drawable/anjian_btn"
+                android:text="4"
+                android:textColor="@color/shouji_haoma_yanse"
+                android:textSize="@dimen/phone_number_size" />
+
+            <Button
+                android:id="@+id/wechat_five"
+                android:layout_width="125.0px"
+                android:layout_height="85.0px"
+                android:layout_marginLeft="1.0px"
+                android:background="@drawable/anjian_btn"
+                android:text="5"
+                android:textColor="@color/shouji_haoma_yanse"
+                android:textSize="@dimen/phone_number_size" />
+
+            <Button
+                android:id="@+id/wechat_six"
+                android:layout_width="125.0px"
+                android:layout_height="85.0px"
+                android:layout_marginLeft="1.0px"
+                android:background="@drawable/anjian_btn"
+                android:text="6"
+                android:textColor="@color/shouji_haoma_yanse"
+                android:textSize="@dimen/phone_number_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="385.0px"
+            android:layout_height="85.0px"
+            android:layout_marginTop="2.0px"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/wechat_seven"
+                android:layout_width="125.0px"
+                android:layout_height="85.0px"
+                android:background="@drawable/anjian_btn"
+                android:text="7"
+                android:textColor="@color/shouji_haoma_yanse"
+                android:textSize="@dimen/phone_number_size" />
+
+            <Button
+                android:id="@+id/wechat_eight"
+                android:layout_width="125.0px"
+                android:layout_height="85.0px"
+                android:layout_marginLeft="1.0px"
+                android:background="@drawable/anjian_btn"
+                android:text="8"
+                android:textColor="@color/shouji_haoma_yanse"
+                android:textSize="@dimen/phone_number_size" />
+
+            <Button
+                android:id="@+id/wechat_nine"
+                android:layout_width="125.0px"
+                android:layout_height="85.0px"
+                android:layout_marginLeft="1.0px"
+                android:background="@drawable/anjian_btn"
+                android:text="9"
+                android:textColor="@color/shouji_haoma_yanse"
+                android:textSize="@dimen/phone_number_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="385.0px"
+            android:layout_height="85.0px"
+            android:layout_marginTop="2.0px"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="125.0px"
+                android:layout_height="85.0px"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/wechat_phone_clear"
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:background="@drawable/anjian_btn"
+                    android:text="@string/clear_number"
+                    android:textColor="@color/shouji_haoma_yanse" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/wechat_zero"
+                android:layout_width="125.0px"
+                android:layout_height="85.0px"
+                android:layout_marginLeft="1.0px"
+                android:background="@drawable/anjian_btn"
+                android:text="0"
+                android:textColor="@color/shouji_haoma_yanse"
+                android:textSize="@dimen/phone_number_size" />
+
+            <LinearLayout
+                android:layout_width="125.0px"
+                android:layout_height="85.0px"
+                android:layout_marginLeft="1.0px"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/wechat_phone_confirm"
+                    android:layout_width="125.0px"
+                    android:layout_height="85.0px"
+                    android:background="@drawable/anjian_btn"
+                    android:text="@string/confirm"
+                    android:textColor="@color/shouji_haoma_yanse" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</AbsoluteLayout>

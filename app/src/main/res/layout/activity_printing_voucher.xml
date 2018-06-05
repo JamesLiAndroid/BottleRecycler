@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="1235.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="3.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dayin_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65.0px"
+                    android:layout_marginTop="130.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dayin_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dayin_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="100.0px"
+            android:layout_marginRight="100.0px"
+            android:layout_weight="5.4"
+            android:background="@drawable/green_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="78.0px"
+                    android:layout_height="78.0px"
+                    android:background="@drawable/youhuiquan_icon" />
+
+                <TextView
+                    style="@style/blue_bg_shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13.0px"
+                    android:text="@string/voucher"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/onecard_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="468.0px"
+                android:layout_margin="5.0px"
+                android:layout_weight="5.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_weight="2.0"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/voucher_info"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="39.0px"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/voucher_name"
+                                style="@style/blue_bg_shadow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="13.0px"
+                                android:textColor="@color/white"
+                                android:textSize="30.0sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dayin_text"
+                                style="@style/blue_bg_shadow"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginTop="13.0px"
+                                android:paddingLeft="13.0px"
+                                android:text="@string/printing"
+                                android:textColor="@color/white"
+                                android:textSize="20.0sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0px"
+                    android:layout_marginBottom="26.0px"
+                    android:layout_marginLeft="13.0px"
+                    android:layout_marginRight="26.0px"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/liebiao_bg"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:id="@+id/BottleCount"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2">
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0.5px">
+
+                            <TextView
+                                android:id="@+id/catacity"
+                                android:layout_width="fill_parent"
+                                android:layout_height="52.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="5.0px"
+                                android:gravity="center"
+                                android:text="@string/catacity"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/quantity"
+                                android:layout_width="fill_parent"
+                                android:layout_height="52.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="5.0px"
+                                android:gravity="center"
+                                android:text="@string/vendquantity"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/donationquantity"
+                                android:layout_width="fill_parent"
+                                android:layout_height="52.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="5.0px"
+                                android:gravity="center"
+                                android:text="@string/vendquantity"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/amount"
+                                android:layout_width="fill_parent"
+                                android:layout_height="52.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="5.0px"
+                                android:gravity="center"
+                                android:text="@string/amount"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:text="@string/milliliter"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/onetotal_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/onetotaldonation_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/onetotal_acount"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:text="450ml-1.2L"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/twototal_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/twototaldonation_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/twototal_amount"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:text="1.2L-2L"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/threetotal_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/threetotaldonation_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/threetotal_amount"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0.5px">
+
+                            <TextView
+                                android:id="@+id/amount1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:text="@string/amount1"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/total_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/totaldonation_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/total_amount"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="17.0sp" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/PaperCount"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2"
+                        android:visibility="gone">
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0.5px">
+
+                            <TextView
+                                android:id="@+id/texture"
+                                android:layout_width="fill_parent"
+                                android:layout_height="52.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="5.0px"
+                                android:gravity="center"
+                                android:text="@string/texture"
+                                android:textColor="@color/white"
+                                android:textSize="25.0sp" />
+
+                            <TextView
+                                android:id="@+id/weight"
+                                android:layout_width="fill_parent"
+                                android:layout_height="52.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="5.0px"
+                                android:gravity="center"
+                                android:text="@string/weight"
+                                android:textColor="@color/white"
+                                android:textSize="25.0sp" />
+
+                            <TextView
+                                android:id="@+id/paper_amount"
+                                android:layout_width="fill_parent"
+                                android:layout_height="52.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="5.0px"
+                                android:gravity="center"
+                                android:text="@string/amount"
+                                android:textColor="@color/white"
+                                android:textSize="25.0sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:text="@string/recycle_paper"
+                                android:textColor="@color/white"
+                                android:textSize="20.0sp" />
+
+                            <TextView
+                                android:id="@+id/paper_count"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="20.0sp" />
+
+                            <TextView
+                                android:id="@+id/paper_total_acount"
+                                android:layout_width="fill_parent"
+                                android:layout_height="46.0px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="3.0px"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="20.0sp" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="920.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="110.0px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dayin_remind_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="130.0px"
+                    android:layout_marginTop="10.0px"
+                    android:background="@drawable/black_bg"
+                    android:gravity="center"
+                    android:padding="13.0px"
+                    android:text="@string/thank"
+                    android:textSize="@dimen/remind_text_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/dayin_end"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:background="@drawable/jieshu_btn"
+                android:paddingTop="65.0px"
+                android:text="@string/end"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="0.8"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</AbsoluteLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_x="0.0px"
+        android:layout_y="0.0px"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.incomrecycle.prms.rvm.gui.activity.view.MyVideoView
+            android:id="@+id/firstVideo"
+            is_scale="false"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <com.incomrecycle.prms.rvm.gui.activity.view.MyGifView
+            android:id="@+id/fullscreen_content"
+            is_scale="true"
+            res_id="@drawable/mian_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200.0px"
+        android:layout_height="750.0px"
+        android:layout_x="1080.0px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ad_icon_list_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frame_right_ad_background"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/ad_icon_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0px"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_y="820.0px">
+
+        <FrameLayout
+            android:id="@+id/throwBottleLayout"
+            android:layout_width="150.0px"
+            android:layout_height="150.0px"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20.0px"
+            android:layout_marginRight="20.0px"
+            android:layout_marginTop="20.0px">
+
+            <com.incomrecycle.prms.rvm.gui.activity.view.MyGifView
+                android:id="@+id/reminder"
+                is_scale="true"
+                res_id="@drawable/pingzitu"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/reminder_text"
+                android:layout_width="120.0px"
+                android:layout_height="20.0px"
+                android:layout_marginLeft="14.0px"
+                android:layout_marginTop="100.0px"
+                android:gravity="center"
+                android:text="@string/outOfService"
+                android:textColor="@color/red" />
+        </FrameLayout>
+
+        <com.incomrecycle.prms.rvm.gui.activity.view.MyGifView
+            android:id="@+id/throwPaper"
+            is_scale="true"
+            res_id="@drawable/diancitouzhi"
+            android:layout_width="150.0px"
+            android:layout_height="150.0px"
+            android:layout_alignBottom="@+id/throwBottleLayout"
+            android:layout_marginRight="20.0px"
+            android:layout_toLeftOf="@+id/throwBottleLayout"
+            android:visibility="gone" />
+
+        <com.incomrecycle.prms.rvm.gui.activity.view.MyGifView
+            android:id="@+id/btnservice"
+            is_scale="true"
+            res_id="@drawable/yikatongtu"
+            android:layout_width="120.0px"
+            android:layout_height="120.0px"
+            android:layout_alignBottom="@+id/throwBottleLayout"
+            android:layout_marginRight="20.0px"
+            android:layout_toLeftOf="@+id/throwPaper" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_top_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_bianhao">
+
+        <LinearLayout
+            android:id="@+id/bianhao_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/take_photo_layout"
+                android:layout_width="1.0px"
+                android:layout_height="1.0px"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/rvm_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setupCfgTimerNumText"
+                android:textColor="@color/black"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:id="@+id/serial_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TF03010SCDZDQWJD1"
+                android:textColor="@color/black"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:layout_width="15.0px"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.incomrecycle.prms.rvm.gui.activity.view.MyDigitalClock
+            android:id="@+id/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bianhao_layout"
+            android:textColor="@color/black"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+</AbsoluteLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/end"
+        android:layout_width="@dimen/linear_right_button_width"
+        android:layout_height="@dimen/linear_right_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="175.0px"
+        android:background="@drawable/rvm_btn"
+        android:text="@string/end"
+        android:textColor="@color/button_textColor"
+        android:textSize="@dimen/linear_right_button_textSize" />
+
+    <Button
+        android:id="@+id/recharge"
+        android:layout_width="@dimen/linear_right_button_width"
+        android:layout_height="@dimen/linear_right_button_height"
+        android:layout_above="@+id/end"
+        android:layout_marginBottom="20.0px"
+        android:background="@drawable/rvm_btn"
+        android:text="@string/recharge"
+        android:textColor="@color/button_textColor"
+        android:textSize="@dimen/linear_right_button_textSize" />
+
+    <Button
+        android:id="@+id/rechargerecord"
+        android:layout_width="@dimen/linear_right_button_width"
+        android:layout_height="@dimen/linear_right_button_height"
+        android:layout_above="@+id/recharge"
+        android:layout_marginBottom="20.0px"
+        android:background="@drawable/rvm_btn"
+        android:text="@string/recharge_record"
+        android:textColor="@color/button_textColor"
+        android:textSize="@dimen/linear_right_button_textSize" />
+
+    <Button
+        android:id="@+id/consumptionrecord"
+        android:layout_width="@dimen/linear_right_button_width"
+        android:layout_height="@dimen/linear_right_button_height"
+        android:layout_above="@+id/rechargerecord"
+        android:layout_marginBottom="20.0px"
+        android:background="@drawable/rvm_btn"
+        android:text="@string/consumption_record"
+        android:textColor="@color/button_textColor"
+        android:textSize="@dimen/linear_right_button_textSize" />
+</RelativeLayout>

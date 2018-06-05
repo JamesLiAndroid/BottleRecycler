@@ -1,0 +1,59 @@
+chmod 777 /dev/ttyS*
+chmod 777 /dev/ttymxc*
+chmod 777 /dev/ttyHB*
+chmod 777 /dev/bus/usb/*
+chmod 777 /dev/bus/usb/*/*
+
+if [ ! -f /data/data/com.incomrecycle.prms.rvm/databases/INCOM.RVM ];then
+	RVM_CODE=0
+	if [ -f /sdcard/rvm/config.properties ];then
+		RVM_CODE=`cat /sdcard/rvm/config.properties | busybox grep 'RVM.CODE=' | busybox grep -v grep | busybox awk -F'='  '{print $2}'`
+	fi
+	if [ -z "$RVM_CODE" ];then
+		RVM_CODE=0
+	fi
+
+	if [ -f /data/data/com.incomrecycle.prms.rvm/databases/${RVM_CODE}.RVM ];then
+		busybox mv /data/data/com.incomrecycle.prms.rvm/databases/${RVM_CODE}.RVM /data/data/com.incomrecycle.prms.rvm/databases/INCOM.RVM
+	fi
+	if [ -f /data/data/com.incomrecycle.prms.rvm/databases/${RVM_CODE}.RVM-journal ];then
+		busybox mv /data/data/com.incomrecycle.prms.rvm/databases/${RVM_CODE}.RVM-journal /data/data/com.incomrecycle.prms.rvm/databases/INCOM.RVM-journal
+	fi
+	if [ -f /data/data/com.incomrecycle.prms.rvm/databases/${RVM_CODE}.SYS ];then
+		busybox mv /data/data/com.incomrecycle.prms.rvm/databases/${RVM_CODE}.SYS /data/data/com.incomrecycle.prms.rvm/databases/INCOM.SYS
+	fi
+	if [ -f /data/data/com.incomrecycle.prms.rvm/databases/${RVM_CODE}.SYS-journal ];then
+		busybox mv /data/data/com.incomrecycle.prms.rvm/databases/${RVM_CODE}.SYS-journal /data/data/com.incomrecycle.prms.rvm/databases/INCOM.SYS-journal
+	fi
+fi
+
+if [ -d /data/data/com.incomrecycle.prms.rvm/databases ];then
+	APP_UID=`cat /data/system/packages.list | busybox grep '/data/data/com.incomrecycle.prms.rvm$' | busybox awk -F' ' '{print $2}'`
+	busybox chown -R ${APP_UID}:${APP_UID} /data/data/com.incomrecycle.prms.rvm/databases
+	busybox chmod 771 /data/data/com.incomrecycle.prms.rvm/databases
+	busybox chmod 660 /data/data/com.incomrecycle.prms.rvm/databases/*
+fi
+
+#	if [ ! -d /sdcard/rvm/databases ];then
+#		mkdir -p /sdcard/rvm/databases
+#		if [ -d /data/data/com.incomrecycle.prms.rvm/databases ];then
+#			busybox cp /data/data/com.incomrecycle.prms.rvm/databases/* /sdcard/rvm/databases/
+#		fi
+#	fi
+
+DAEMON_INSTALLED_APK=`ls /data/app/com.incomrecycle.prms.rvmdaemon*.apk 2>/dev/null`
+if [ -n "$DAEMON_INSTALLED_APK" ];then
+	DAEMON_PID=`ps | busybox grep com.incomrecycle.prms.rvmdaemon | busybox grep -v grep | busybox awk -F' '  '{print $2}'`
+	if [ -z "$DAEMON_PID" ];then
+		am start com.incomrecycle.prms.rvmdaemon/com.incomrecycle.prms.rvmdaemon.MainActivity 2>/dev/null 1>/dev/null
+	fi
+fi
+
+if [ -f /sdcard/rvm/system_status.shell ];then
+	if [ -f /proc/net/dev ];then
+		TEST_RES=`cat /sdcard/rvm/system_status.shell | busybox grep '/proc/net/dev'`
+		if [ -z "$TEST_RES" ];then
+			echo "\ncat /proc/net/dev" >> /sdcard/rvm/system_status.shell
+		fi
+	fi
+fi

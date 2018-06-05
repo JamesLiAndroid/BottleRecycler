@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="950.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="3.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/activity_youku_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0px"
+                    android:layout_marginTop="100.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/activity_youku_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_youku_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="80.0px"
+            android:layout_marginRight="80.0px"
+            android:layout_weight="5.4"
+            android:orientation="horizontal"
+            android:paddingBottom="12.0px"
+            android:paddingLeft="9.0px"
+            android:paddingRight="9.0px"
+            android:paddingTop="5.0px">
+
+            <TextView
+                android:id="@+id/show_ad_info"
+                style="@style/blue_bg_shadow"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/blue_bg"
+                android:gravity="center"
+                android:text="@string/thank"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/onecard_textsize"
+                android:visibility="gone" />
+
+            <com.incomrecycle.prms.rvm.gui.activity.view.MyGifView
+                android:id="@+id/show_ad_img"
+                is_scale="true"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activity_youku_return_btn"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:layout_marginTop="5.0px"
+                android:background="@drawable/fanhui_btn"
+                android:paddingTop="65.0px"
+                android:text="@string/no"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activity_youku_remind"
+                android:layout_width="800.0px"
+                android:layout_height="135.0px"
+                android:background="@drawable/black_bg"
+                android:gravity="center"
+                android:padding="10.0px"
+                android:textSize="@dimen/remind_text_size" />
+
+            <Button
+                android:id="@+id/activity_youku_confirm"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:layout_marginTop="5.0px"
+                android:background="@drawable/queding_btn"
+                android:paddingTop="65.0px"
+                android:text="@string/yes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="0.8"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</AbsoluteLayout>

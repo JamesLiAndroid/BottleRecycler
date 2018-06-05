@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="100.0px"
+            android:layout_marginRight="100.0px"
+            android:layout_weight="2.9"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.0"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingRight="10.0px">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="160.0px"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/take_photo_layout"
+                        android:layout_width="1.0px"
+                        android:layout_height="1.0px"
+                        android:orientation="horizontal" />
+
+                    <TextView
+                        android:id="@+id/rvm_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0px"
+                        android:text="@string/setupCfgTimerNumText"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/linear_right_button_textSize" />
+
+                    <TextView
+                        android:id="@+id/serial_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/linear_right_button_textSize" />
+                </LinearLayout>
+
+                <com.incomrecycle.prms.rvm.gui.activity.view.MyDigitalClock
+                    android:id="@+id/clock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10.0px"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="74.0px"
+            android:layout_marginRight="78.0px"
+            android:layout_weight="3.5"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0.0px"
+                android:layout_height="310.0px"
+                android:layout_marginLeft="10.0px"
+                android:layout_marginRight="10.0px"
+                android:layout_marginTop="6.0px"
+                android:layout_weight="3.0">
+
+                <com.incomrecycle.prms.rvm.gui.activity.view.MyGifView
+                    android:id="@+id/myImageView"
+                    is_scale="true"
+                    res_id="@drawable/pic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.0"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/throwPaper"
+                    android:layout_width="313.0px"
+                    android:layout_height="310.0px"
+                    android:background="@drawable/touzhi_btn_big"
+                    android:paddingTop="182.0px"
+                    android:text="@string/btnthrowPaper"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="@dimen/linear_left_textsize"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:layout_width="320.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="3.0px"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/weixinButton"
+                        android:layout_width="313.0px"
+                        android:layout_height="310.0px"
+                        android:layout_marginTop="6.0px"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="18.0px"
+                        android:paddingTop="190.0px" />
+
+                    <com.incomrecycle.prms.rvm.gui.activity.view.MyGifView
+                        android:id="@+id/myQRcodeImage"
+                        is_scale="true"
+                        res_id="@drawable/attention_lnk"
+                        android:layout_width="313.0px"
+                        android:layout_height="310.0px"
+                        android:layout_marginTop="6.0px" />
+
+                    <TextView
+                        android:id="@+id/follow_us_more_text"
+                        android:layout_width="220.0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90.0px"
+                        android:layout_marginTop="30.0px"
+                        android:gravity="center"
+                        android:text="@string/wechat_fourth_str"
+                        android:textColor="@color/button_textColor"
+                        android:textSize="20.0sp"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0px"
+                android:layout_weight="2.0">
+
+                <Button
+                    android:id="@+id/reminder"
+                    android:layout_width="310.0px"
+                    android:layout_height="310.0px"
+                    android:layout_marginTop="6.0px"
+                    android:background="@drawable/touping_btn"
+                    android:gravity="right"
+                    android:paddingBottom="200.0px"
+                    android:paddingRight="32.0px"
+                    android:paddingTop="26.0px"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="27.0sp"
+                    android:textStyle="bold" />
+
+                <com.incomrecycle.prms.rvm.gui.activity.view.MyGifView
+                    android:id="@+id/jiantou_text"
+                    is_scale="true"
+                    res_id="@drawable/pingzitu"
+                    android:layout_width="183.0px"
+                    android:layout_height="183.0px"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="80.0px"
+            android:layout_marginRight="80.0px"
+            android:layout_weight="3.6"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3.0px"
+                android:layout_weight="3.3"
+                android:orientation="vertical">
+
+                <com.incomrecycle.prms.rvm.gui.activity.view.MyGifView
+                    android:id="@+id/fullscreen_content"
+                    is_scale="true"
+                    res_id="@drawable/home"
+                    android:layout_width="573.0px"
+                    android:layout_height="334.0px" />
+
+                <com.incomrecycle.prms.rvm.gui.activity.view.MyVideoView
+                    android:id="@+id/firstVideo"
+                    android:layout_width="573.0px"
+                    android:layout_height="334.0px"
+                    android:keepScreenOn="true"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360.0px"
+                android:layout_height="334.0px"
+                android:layout_marginLeft="5.0px"
+                android:background="@drawable/tongzhigonggao_pic"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sbar_view_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="65.0px"
+                    android:layout_marginLeft="18.0px"
+                    android:gravity="center_vertical"
+                    android:text="@string/notice"
+                    android:textColor="@color/white"
+                    android:textSize="27.0sp" />
+
+                <com.incomrecycle.prms.rvm.gui.activity.view.VerticalMarqueeTextview
+                    android:id="@+id/mySbarView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.5"
+                    android:paddingBottom="20.0px"
+                    android:paddingLeft="19.0px"
+                    android:paddingRight="19.0px"
+                    android:paddingTop="7.0px"
+                    android:text="@string/welcome"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnservice"
+                    android:layout_width="160.0px"
+                    android:layout_height="162.0px"
+                    android:layout_marginLeft="10.0px"
+                    android:background="@drawable/bianmin_btn"
+                    android:paddingTop="75.0px"
+                    android:text="@string/btnConvenienceServices"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="@dimen/linear_right_button_textSize"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/aboutUs"
+                    android:layout_width="160.0px"
+                    android:layout_height="162.0px"
+                    android:layout_marginLeft="10.0px"
+                    android:layout_marginTop="10.0px"
+                    android:background="@drawable/lianxiwomen_btn"
+                    android:paddingTop="75.0px"
+                    android:text="@string/aboutUs"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="@dimen/linear_right_button_textSize"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/maintainGardBtn"
+                    android:layout_width="160.0px"
+                    android:layout_height="162.0px"
+                    android:layout_marginLeft="10.0px"
+                    android:layout_marginTop="10.0px"
+                    android:background="@drawable/weihu_btn_big"
+                    android:paddingTop="75.0px"
+                    android:text="@string/maintainGard"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="@dimen/linear_right_button_textSize"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="60.0px"
+            android:layout_marginRight="25.0px"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="4.0px"
+                android:layout_weight="7.0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnChinese"
+                    android:layout_width="150.0px"
+                    android:layout_height="65.0px"
+                    android:background="@drawable/yuyan_btn"
+                    android:text="@string/btnChineseText"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/linear_right_button_textSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnEnglish"
+                    android:layout_width="150.0px"
+                    android:layout_height="65.0px"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/yuyan_btn"
+                    android:text="@string/btnEnglishText"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/linear_right_button_textSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnSpanish"
+                    android:layout_width="150.0px"
+                    android:layout_height="65.0px"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/yuyan_btn"
+                    android:text="@string/btnSpanishText"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/linear_right_button_textSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnTurky"
+                    android:layout_width="150.0px"
+                    android:layout_height="65.0px"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/yuyan_btn"
+                    android:text="@string/btnTurkyText"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/linear_right_button_textSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnPortuguese"
+                    android:layout_width="150.0px"
+                    android:layout_height="65.0px"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/yuyan_btn"
+                    android:text="@string/btnPortugueseText"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/linear_right_button_textSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnDutch"
+                    android:layout_width="150.0px"
+                    android:layout_height="65.0px"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/yuyan_btn"
+                    android:text="@string/btnDutchText"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/linear_right_button_textSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnHindi"
+                    android:layout_width="150.0px"
+                    android:layout_height="65.0px"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/yuyan_btn"
+                    android:text="@string/btnHindiText"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/linear_right_button_textSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnLanguageSwitch"
+                    android:layout_width="150.0px"
+                    android:layout_height="65.0px"
+                    android:layout_marginLeft="3.0px"
+                    android:background="@drawable/weihu_btn"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/linear_right_button_textSize"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="78.0px"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/maintainGard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="65.0px"
+                    android:background="@drawable/weihu_btn"
+                    android:gravity="center"
+                    android:text="@string/maintainGard"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="23.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</AbsoluteLayout>

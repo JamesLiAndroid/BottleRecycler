@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_system_settings_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/blue_bg_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30.0px"
+        android:layout_marginLeft="10.0px"
+        android:layout_marginTop="@dimen/linear_left_table_marginTop"
+        android:gravity="center"
+        android:text="@string/systemSettings"
+        android:textColor="@color/white"
+        android:textSize="@dimen/linear_left_textsize"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="142.0px"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancelTimingButton"
+                    android:layout_width="140.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/tongdaoweihu_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/timingSet"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="12.0sp" />
+
+                <Button
+                    android:id="@+id/faultDiagnosisButton"
+                    android:layout_width="140.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/tongdaoweihu_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/faultDiagnosis"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="12.0sp" />
+
+                <Button
+                    android:id="@+id/setMaxBottleNum"
+                    android:layout_width="140.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/tongdaoweihu_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/setBottleMaxNum"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="12.0sp" />
+
+                <Button
+                    android:id="@+id/setOnOff_Door"
+                    android:layout_width="140.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/tongdaoweihu_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/setOnOff_Door"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="142.0px"
+                android:layout_marginTop="13.0px"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_heartToneDetection"
+                    android:layout_width="140.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="13.0px"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ff1c57ca"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0px"
+                            android:gravity="bottom"
+                            android:text="@string/current_status"
+                            android:textColor="#ffffffff" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5px"
+                            android:layout_marginLeft="5.0px"
+                            android:layout_marginRight="5.0px"
+                            android:background="#ff000000" />
+
+                        <TextView
+                            android:id="@+id/heartToneDetection_status"
+                            android:layout_width="fill_parent"
+                            android:layout_height="52.0px"
+                            android:gravity="center"
+                            android:text="@string/HeartToneDetectionStopped"
+                            android:textColor="#ffffffff" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1.0px"
+                        android:layout_marginLeft="5.0px"
+                        android:layout_marginRight="5.0px"
+                        android:background="#ff000000" />
+
+                    <Button
+                        android:id="@+id/heartToneDetectionButton"
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0px"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/tongdaoweihu_btn_bg"
+                        android:gravity="center"
+                        android:text="@string/startHeartToneDetection"
+                        android:textColor="@color/button_textColor"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/startUsingButton"
+                    android:layout_width="140.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/tongdaoweihu_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/start_using"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="12.0sp" />
+
+                <Button
+                    android:id="@+id/dubuggingButton"
+                    android:layout_width="140.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/tongdaoweihu_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/maintain_start_dubugging"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="12.0sp" />
+
+                <Button
+                    android:id="@+id/openCloseVoiceButton"
+                    android:layout_width="140.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/tongdaoweihu_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/adjust_volume"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0px">
+
+                <Button
+                    android:id="@+id/duociqiting"
+                    android:layout_width="140.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="13.0px"
+                    android:background="@drawable/tongdaoweihu_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/duociqiting"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

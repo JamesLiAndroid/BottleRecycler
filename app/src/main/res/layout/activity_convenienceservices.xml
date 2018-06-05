@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="1188.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="3.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/conve_Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0px"
+                    android:layout_marginTop="100.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/conve_TimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/conve_select_query"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="80.0px"
+            android:layout_marginRight="80.0px"
+            android:layout_weight="5.4"
+            android:background="@drawable/conve_select_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/conve_select_query_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="380.0px"
+                    android:layout_marginTop="90.0px"
+                    android:text="@string/selectServiceType"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/onecard_textsize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="1.3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="13.0px"
+                    android:layout_marginLeft="9.0px"
+                    android:layout_marginRight="5.0px"
+                    android:layout_weight="1.0">
+
+                    <Button
+                        android:id="@+id/conve_btnqueryonecard"
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/conve_yikatong_btn_on"
+                        android:paddingTop="130.0px"
+                        android:text="@string/queryonecard"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="13.0px"
+                    android:layout_marginRight="8.0px"
+                    android:layout_weight="1.0">
+
+                    <Button
+                        android:id="@+id/conve_btnqueryqrcode"
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/conve_erweima_btn_on"
+                        android:paddingTop="130.0px"
+                        android:text="@string/queryqrcode"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/conve_btnreturn"
+                android:layout_width="150.0px"
+                android:layout_height="150.0px"
+                android:layout_marginLeft="75.0px"
+                android:background="@drawable/fanhui_btn"
+                android:paddingTop="65.0px"
+                android:text="@string/backBtn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="752.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/conve_remind_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="130.0px"
+                    android:layout_marginRight="80.0px"
+                    android:layout_marginTop="13.0px"
+                    android:background="@drawable/black_bg"
+                    android:gravity="center"
+                    android:padding="13.0px"
+                    android:text="@string/help_info"
+                    android:textSize="@dimen/remind_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="0.8"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</AbsoluteLayout>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="950.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="3.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/onecard_query_main_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0px"
+                    android:layout_marginTop="100.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/onecard_query_main_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/conve_select_query"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="80.0px"
+            android:layout_marginRight="80.0px"
+            android:layout_weight="5.4"
+            android:background="@color/blue"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/conve_select_this"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10.0px"
+                    android:layout_marginLeft="7.0px"
+                    android:layout_marginRight="4.0px"
+                    android:layout_weight="1.0">
+
+                    <Button
+                        android:id="@+id/toload"
+                        android:layout_width="110.0px"
+                        android:layout_height="150.0px"
+                        android:layout_marginLeft="55.0px"
+                        android:layout_marginTop="80.0px"
+                        android:background="@drawable/quancun_btn"
+                        android:paddingTop="70.0px"
+                        android:text="@string/toload"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/scrape"
+                        android:layout_width="110.0px"
+                        android:layout_height="150.0px"
+                        android:layout_marginLeft="40.0px"
+                        android:layout_marginTop="80.0px"
+                        android:layout_toRightOf="@+id/toload"
+                        android:background="@drawable/scratch_card_btn"
+                        android:paddingLeft="10.0px"
+                        android:paddingTop="70.0px"
+                        android:text="@string/scrape"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/fastVolume"
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="110.0px"
+                        android:layout_height="150.0px"
+                        android:layout_marginLeft="40.0px"
+                        android:layout_marginTop="80.0px"
+                        android:layout_toRightOf="@+id/scrape"
+                        android:background="@drawable/rapid_charge_btn"
+                        android:paddingTop="70.0px"
+                        android:text="@string/fastvolume"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/incomrecharge"
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="110.0px"
+                        android:layout_height="150.0px"
+                        android:layout_below="@+id/toload"
+                        android:layout_marginLeft="55.0px"
+                        android:layout_marginTop="80.0px"
+                        android:background="@drawable/incomchongzhi_btn"
+                        android:paddingTop="60.0px"
+                        android:text="@string/onecard_recharge_btn"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_bdj"
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="110.0px"
+                        android:layout_height="150.0px"
+                        android:layout_below="@+id/toload"
+                        android:layout_marginLeft="40.0px"
+                        android:layout_marginTop="80.0px"
+                        android:layout_toRightOf="@+id/incomrecharge"
+                        android:background="@drawable/incomchongzhi_btn"
+                        android:paddingTop="70.0px"
+                        android:text="@string/incomrc"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/queryandother"
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="110.0px"
+                        android:layout_height="150.0px"
+                        android:layout_below="@+id/fastVolume"
+                        android:layout_marginLeft="40.0px"
+                        android:layout_marginTop="80.0px"
+                        android:layout_toRightOf="@+id/btn_bdj"
+                        android:background="@drawable/queryother"
+                        android:paddingTop="60.0px"
+                        android:text="@string/onecard_queryother_btn"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/line_03" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10.0px"
+                    android:layout_marginRight="6.0px"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="44.0px"
+                        android:layout_height="44.0px"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15.0px"
+                        android:src="@drawable/yikatong" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15.0px"
+                        android:text="一卡通"
+                        android:textColor="@color/black"
+                        android:textSize="24.0px" />
+
+                    <LinearLayout
+                        android:id="@+id/money_insidecard_layout"
+                        android:layout_width="480.0px"
+                        android:layout_height="47.0px"
+                        android:layout_marginTop="120.0px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="45.0px"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:text="@string/card_in_total"
+                            android:textColor="@color/black"
+                            android:textSize="22.0px" />
+
+                        <TextView
+                            android:id="@+id/money_insidecard"
+                            android:layout_width="120.0px"
+                            android:layout_height="fill_parent"
+                            android:gravity="center|left"
+                            android:textColor="@color/black"
+                            android:textSize="22.0px" />
+
+                        <TextView
+                            android:id="@+id/money_insidecard0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="45.0px"
+                            android:gravity="center_vertical"
+                            android:text="@string/yuan"
+                            android:textColor="@color/black"
+                            android:textSize="22.0px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/money_recharge_layout"
+                        android:layout_width="480.0px"
+                        android:layout_height="50.0px"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="45.0px"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:text="@string/recharge_text"
+                            android:textColor="@color/black"
+                            android:textSize="22.0px" />
+
+                        <TextView
+                            android:id="@+id/money_recharge"
+                            android:layout_width="120.0px"
+                            android:layout_height="fill_parent"
+                            android:gravity="center|left"
+                            android:textColor="@color/black"
+                            android:textSize="22.0px" />
+
+                        <TextView
+                            android:id="@+id/money_insidecard1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="45.0px"
+                            android:gravity="center_vertical"
+                            android:text="@string/yuan"
+                            android:textColor="@color/black"
+                            android:textSize="22.0px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/INCOM_balence_layout"
+                        android:layout_width="480.0px"
+                        android:layout_height="50.0px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/ggk_balance_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="45.0px"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:text="@string/incom_ggk_balance"
+                            android:textColor="@color/black"
+                            android:textSize="22.0px" />
+
+                        <TextView
+                            android:id="@+id/INCOM_balence"
+                            android:layout_width="120.0px"
+                            android:layout_height="fill_parent"
+                            android:gravity="center|left"
+                            android:textColor="@color/black"
+                            android:textSize="22.0px" />
+
+                        <TextView
+                            android:id="@+id/money_insidecard2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="45.0px"
+                            android:gravity="center_vertical"
+                            android:text="@string/yuan"
+                            android:textColor="@color/black"
+                            android:textSize="22.0px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="752.0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/conve_remind_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="134.0px"
+                    android:layout_marginLeft="80.0px"
+                    android:layout_marginTop="10.0px"
+                    android:background="@drawable/black_bg"
+                    android:gravity="center"
+                    android:padding="10.0px"
+                    android:text="@string/help_info"
+                    android:textSize="@dimen/remind_text_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/end"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:layout_marginRight="75.0px"
+                android:layout_marginTop="10.0px"
+                android:background="@drawable/fanhui_btn"
+                android:paddingTop="50.0px"
+                android:text="@string/backBtn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</AbsoluteLayout>

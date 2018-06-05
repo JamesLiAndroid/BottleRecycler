@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/networkLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/blue_bg_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0px"
+        android:gravity="center"
+        android:text="@string/netWorkTestTopText"
+        android:textColor="@color/white"
+        android:textSize="@dimen/linear_left_textsize"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0px"
+        android:layout_marginRight="10.0px"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0.0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="45.0px"
+                android:background="@drawable/biaoge_bg"
+                android:gravity="center"
+                android:text="@string/testNumText" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="45.0px"
+                android:layout_marginTop="2.0px"
+                android:background="@drawable/biaoge_bg"
+                android:gravity="center"
+                android:text="@string/timeOutText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/testNumEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0px"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:text="10" />
+
+            <EditText
+                android:id="@+id/timeOutEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0px"
+                android:ems="10"
+                android:gravity="center"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:text="5000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/testBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="91.0px"
+                android:background="@drawable/tongdaoweihu_btn_bg"
+                android:text="@string/startTestBtn"
+                android:textColor="@color/button_textColor" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0px"
+        android:layout_marginRight="10.0px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0.0px"
+                android:layout_height="39.0px"
+                android:layout_weight="2.0"
+                android:gravity="center"
+                android:text="@string/netWorkTestDateTimeText"
+                android:textColor="@color/white"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:layout_width="0.0px"
+                android:layout_height="39.0px"
+                android:layout_weight="6.0"
+                android:gravity="center"
+                android:text="@string/netWorkTestInfoText"
+                android:textColor="@color/white"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:layout_width="0.0px"
+                android:layout_height="39.0px"
+                android:layout_weight="2.0"
+                android:gravity="center"
+                android:text="@string/netWorkTestOperText"
+                android:textColor="@color/white"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/networkTestLv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/text_textColor" />
+    </LinearLayout>
+</LinearLayout>

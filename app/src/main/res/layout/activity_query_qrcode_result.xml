@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="1188.0px"
+            android:layout_height="0.0px"
+            android:layout_weight="3.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/query_qrcode_result_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0px"
+                    android:layout_marginTop="100.0px"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/query_qrcode_result_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100.0px"
+                    android:text="@string/dao_ji_shi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/serial_number_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/query_qrcode_result_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="80.0px"
+            android:layout_marginRight="80.0px"
+            android:layout_weight="5.4"
+            android:background="@drawable/blue_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="2.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/query_qrcode_result_title"
+                    android:layout_width="75.0px"
+                    android:layout_height="75.0px"
+                    android:background="@drawable/lvniukou_icon" />
+
+                <TextView
+                    android:id="@+id/query_qrcode_result_text"
+                    style="@style/blue_bg_shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13.0px"
+                    android:text="@string/queryqrcode"
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/onecard_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/qr_result_count_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|right"
+                        android:text="@string/rebate_total"
+                        android:textColor="@color/blue_text"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rebate_total_con"
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13.0px"
+                        android:gravity="center|left"
+                        android:textColor="@color/blue_text"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13.0px"
+                        android:gravity="center"
+                        android:text="@string/yuan"
+                        android:textColor="@color/blue_text"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25.0px"
+                        android:gravity="center|right"
+                        android:text="@string/rebate_this"
+                        android:textColor="@color/blue_text"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/recharge_text"
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13.0px"
+                        android:gravity="center|left"
+                        android:textColor="@color/blue_text"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/blue_bg_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13.0px"
+                        android:gravity="center"
+                        android:text="@string/yuan"
+                        android:textColor="@color/blue_text"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/chaxun_qrcode_jifen_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/integrationText"
+                            style="@style/blue_bg_shadow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25.0px"
+                            android:gravity="center|right"
+                            android:text="@string/integration"
+                            android:textColor="@color/blue_text"
+                            android:textSize="@dimen/onecard_textsize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/chaxun_qrcode_integration"
+                            style="@style/blue_bg_shadow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13.0px"
+                            android:gravity="center|left"
+                            android:textColor="@color/blue_text"
+                            android:textSize="@dimen/onecard_textsize"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/qr_result_fail_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="25.0px"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/qr_select_fail_warningtext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_horizontal"
+                        android:padding="13.0px"
+                        android:text="@string/QRcode_info_fail_text"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/onecard_textsize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_gone_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="75.0px"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/query_qrcode_result_remind_text"
+                android:layout_width="610.0px"
+                android:layout_height="102.0px"
+                android:layout_marginTop="8.0px"
+                android:background="@drawable/black_bg"
+                android:gravity="center"
+                android:padding="10.0px"
+                android:text="@string/help_info"
+                android:textSize="@dimen/remind_text_size" />
+
+            <Button
+                android:id="@+id/query_gone_sure"
+                android:layout_width="120.0px"
+                android:layout_height="120.0px"
+                android:layout_marginTop="10.0px"
+                android:background="@drawable/queding_btn"
+                android:paddingTop="50.0px"
+                android:text="@string/transfer"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/query_gone_end"
+                android:layout_width="120.0px"
+                android:layout_height="120.0px"
+                android:layout_marginTop="10.0px"
+                android:background="@drawable/jieshu_btn"
+                android:paddingTop="50.0px"
+                android:text="@string/end"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_visibility_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_marginLeft="60.0px"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/query_qrcode_result_remind_text"
+                android:layout_width="950.0px"
+                android:layout_height="136.0px"
+                android:background="@drawable/black_bg"
+                android:gravity="center"
+                android:padding="15.0px"
+                android:text="@string/help_info"
+                android:textSize="@dimen/remind_text_size" />
+
+            <Button
+                android:id="@+id/query_visibility_end"
+                android:layout_width="156.0px"
+                android:layout_height="156.0px"
+                android:layout_marginTop="4.0px"
+                android:background="@drawable/jieshu_btn"
+                android:paddingTop="65.0px"
+                android:text="@string/end"
+                android:textColor="@color/white"
+                android:textSize="@dimen/linear_right_button_textSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="0.8"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</AbsoluteLayout>
